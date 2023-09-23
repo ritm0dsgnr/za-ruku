@@ -18,6 +18,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="#0050A0">
 		
 		<link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
 
 	</head>
   <body>
@@ -37,14 +38,21 @@
             <div class="intro__content">
               <h1 class="intro__content-title">Время <br><span>провериться</span></h1>
               <p class="intro__content-subtitle">Дорогие пациенты!</p>
-              <p class="intro__content-text">Компания Roche совместно c онкодиспансером Нижнего Новгорода запускает проект «Время провериться», предназначенный для своевременного выявления прогрессии <span>рака мочевого пузыря (РМП)</span>. Проект предоставляет широкие возможности контроля онкологических заболеваний <nobr>для пациентов</nobr> из Нижнего Новгорода.</p>
+              <p class="intro__content-text">Компания Roche совместно <nobr>c онкодиспансером</nobr> Нижнего Новгорода запускает проект «Время провериться», предназначенный для своевременного выявления прогрессии <span>рака мочевого пузыря (РМП)</span>. Проект предоставляет широкие возможности контроля онкологических заболеваний <nobr>для пациентов</nobr> из Нижнего Новгорода.</p>
             </div>
-            <img class="intro-illustration" src="img/main-illustration.svg" alt="">
+            <picture>
+              <source media="(max-width: 320px)" srcset="img/main-illustration-320.svg">
+              <source media="(max-width: 768px)" srcset="img/main-illustration-768.svg">
+              <source media="(max-width: 1366px)" srcset="img/main-illustration-1366.svg">
+              <img class="intro-illustration" src="img/main-illustration.svg" alt="">
+            </picture>
           </div>
         </div>
-        <svg class="main-bg" viewBox="0 0 2560 292" xmlns="http://www.w3.org/2000/svg">
-          <path d="M1261.5 98C775.5 -114 206.83 100.17 0 292H2560V0C2398.5 204 1797.88 332 1261.5 98Z"/>
-        </svg>
+        <picture>
+          <source media="(max-width: 320px)" srcset="img/main-bg-320.svg">
+          <source media="(max-width: 1366px)" srcset="img/main-bg-1366.svg">
+          <img class="main-bg" src="img/main-bg.svg" alt="">
+        </picture>
       </section>
       <section class="info">
         <div class="container">
@@ -62,9 +70,11 @@
               <img src="img/info-illustration.svg" alt="">
             </div>
             <div class="info__contact-content">
-              <p class="info__contact-content-title">В рамках проекта в период</p>
-              <p class="info__contact-content-title"><span>с 15 сентября по 31 декабря</span> вы сможете </p>
-              <p class="info__contact-content-title">посетить онколога без долгих ожиданий и очередей.</p>
+              <p class="info__contact-content-title">
+                <span>В рамках нашего проекта в период</span>
+                <span class="accent">с 15 сентября по 31 декабря</span> 
+                <span>вы сможете посетить онколога без долгих ожиданий и очередей.</span>
+              </p>
               <div class="info__contact-content-text">Для этого необходимо записаться на прием по телефону горячей линии <span>НОКОД</span></div>
               <a href="tel:+88312820001" class="btn">
                 <img src="img/phone-icon.svg" alt="">
@@ -77,43 +87,57 @@
       <section class="articles">
         <div class="container">
           <div class="articles__content">
-            <p class="articles__content-title"><span>Возьмем под контроль</span> собственное здоровье и ответственность за родных и близких! </p>
+            <p class="articles__content-title"><span>Возьмем <nobr>под контроль</span> собственное</nobr> здоровье и ответственность за родных и близких! </p>
             <p class="articles__content-subtitle">Приходите сами, помогите пройти обследование дорогим вам людям!</p>
             <div class="articles__content-items">
               <div class="articles__content-items-item">
                 <img class="articles__content-items-item-icon" src="img/articles-01.svg" alt="">
                 <p class="articles__content-items-item-title">Как лечат РМП <nobr>на ранних</nobr> стадиях</p>
-                <a href="#" class="btn">Читать</a>
+                <a href="https://zaruku.com/vremya_proveritsya/kak-lechat-urotelialnyj-rak-na-0-i-ii-stadiyah/" class="btn" target="_blank">Читать</a>
               </div>
               <div class="articles__content-items-item">
                 <img class="articles__content-items-item-icon" src="img/articles-02.svg" alt="">
                 <p class="articles__content-items-item-title">Как лечат <nobr>на стадиях</nobr> 2,3</p>
-                <a href="#" class="btn">Читать</a>
+                <a href="https://zaruku.com/vremya_proveritsya/kak-lechat-urotelialnyj-rak-na-myshechno-invazivnoj-stadii/" class="btn" target="_blank">Читать</a>
               </div>
               <div class="articles__content-items-item">
                 <img class="articles__content-items-item-icon" src="img/articles-03.svg" alt="">
                 <p class="articles__content-items-item-title">Как лечат <nobr>на метастатической</nobr> стадии</p>
-                <a href="#" class="btn">Читать</a>
+                <a href="https://zaruku.com/vremya_proveritsya/kak-lechat-urotelialnyj-rak-s-metastazami/" class="btn" target="_blank">Читать</a>
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="video">
+        <div class="mask hidden"></div>
+        <div class="popup hidden">
+          <img class="popup-close" src="img/close-icon.svg" alt="">
+          <p class="popup__title">Жизнь пациента с раком мочевого пузыря после противоопухолевого лечения или во время него</p>
+          <iframe class="hidden" src="https://www.youtube.com/embed/DHQtHpOyHuo?si=mnrria_W8EwlMeKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe class="hidden" src="https://www.youtube.com/embed/4wkZtHJnzrg?si=lz45BLmjS_7EOOGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+          <iframe class="hidden" src="https://www.youtube.com/embed/aqGwO4o1sks?si=ctc45fMah1QSuPg7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
         <div class="container">
-          <h2 class="video__title">Что важно знать пациенту с РМП</h2>
+          <h2 class="video__title">Что важно знать пациенту <nobr>с РМП</nobr></h2>
           <div class="video__content">
             <div class="video__content-item">
-              <div class="video__content-item-video"></div>
-              <p class="video__content-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+              <div class="video__content-item-video">
+                <img src="img/preview-01.jpg" alt="">
+              </div>
+              <p class="video__content-item-text">Диспансерное наблюдение пациентов с раком мочевого пузыря после лечения</p>
             </div>
             <div class="video__content-item">
-              <div class="video__content-item-video"></div>
-              <p class="video__content-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+              <div class="video__content-item-video">
+                <img src="img/preview-02.jpg" alt="">
+              </div>
+              <p class="video__content-item-text">Жизнь пациента с раком мочевого пузыря после противоопухолевого лечения или во время него</p>
             </div>
             <div class="video__content-item">
-              <div class="video__content-item-video"></div>
-              <p class="video__content-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+              <div class="video__content-item-video">
+                <img src="img/preview-03.jpg" alt="">
+              </div>
+              <p class="video__content-item-text">Лечение пациентов с раком мочевого пузыря</p>
             </div>
           </div>
         </div>
@@ -121,26 +145,26 @@
     </div>
     <footer class="footer">
       <div class="container">
-        <p class="footer__text">Номер материала M-RU-00012701 сентябрь 2023</p>
+        <p class="footer__text"><span>Номер материала</span> M-RU-00012701 сентябрь 2023</p>
       </div>
       <div class="pre__footer">
         <div class="container">
           <p class="pre__footer-text pre__footer-title">Источники</p>
           <p class="pre__footer-text">1. Cancer.Net. [Internet; cited 2019 April 5].</p>
-          <p class="pre__footer-text">https://www.cancer.net/cancer-types/bladder-cancer/introduction/ </p>
+          <p class="pre__footer-text">https://www.cancer.net/cancer-types/bladder-cancer/introduction/</p>
           <p class="pre__footer-text">2. Bray et al. Global cancer statistics.2018. GLOBOCAN estimates of incidence and mortality worldwide for 36 cancers in 185 countries. Ca Cancer J Clin. 2018.68.394–424.</p>
-          <p class="pre__footer-text">3. Имянитов Е. Н., Хансон К. П. Эпидемиология и биология рака мочевого пузыря, 2003. </p>
+          <p class="pre__footer-text">3. Имянитов Е. Н., Хансон К. П. Эпидемиология и биология рака мочевого пузыря, 2003.</p>
           <p class="pre__footer-text">https://rosoncoweb.ru/library/journals/practical_oncology/arh016/01.pdf.</p>
-          <p class="pre__footer-text">4. Официальный сайт ВОЗ. Борьба с раком. Знания в действии. Руководство ВОЗ по эффективным программам. URL: https://apps.who.int/iris/bitstream/handle/10665/43743/9241547338_eng.pdf?sequence=1 (дата обращения: 26.07.2022 года).</p>
+          <p class="pre__footer-text">4. Официальный сайт ВОЗ. Борьба с раком. Знания в действии. Руководство ВОЗ по эффективным программам. URL: https://apps.who.int/iris/bitstream/ handle/10665/43743/9241547338_eng.pdf?sequence=1 (дата обращения: 26.07.2022 года).</p>
           <p class="pre__footer-text pre__footer-subtext">Информация в видео не заменяет консультацию специалиста здравоохранения. Обратитесь к лечащему врачу.</p>
         </div>
       </div>
       <div class="main__footer">
         <div class="container">
           <div class="main__footer-nav">
-            <a href="#" class="main__footer-nav-link">Официальное уведомление</a>
-            <a href="#" class="main__footer-nav-link">Нежелательные явления</a>
-            <a href="#" class="main__footer-nav-link">Конфиденциальность</a>
+            <p class="main__footer-nav-link">Официальное уведомление</p>
+            <p class="main__footer-nav-link">Нежелательные явления</p>
+            <p class="main__footer-nav-link">Конфиденциальность</p>
           </div>
           <p class="main__footer-text">
             <span>Информация о заболевании не заменяет консультацию специалиста здравоохранения. Обратитесь к лечащему врачу.</span>
@@ -148,12 +172,15 @@
             Сайт предназначен только для посетителей старше 18 лет из Российской Федерации.
           </p>
           <div class="main__footer-block">
-            <p class="main__footer-text">© 2020 09.04.2020  АО «Рош-Москва», г. Москва. Все права защищены</p>
+            <p class="main__footer-text desktop">© 2020 09.04.2020  АО «Рош-Москва», г. Москва. Все права защищены</p>
+            <p class="main__footer-text mobile">© 2023 25.04.2023 АО «Рош-Москва», 107031, Россия, г. Москва, Трубная площадь, дом 2, помещение 1, этаж 1, комната 42, МФК «Галерея Неглинная». Тел.: +7 (495) 229 29 99. Все права защищены</p>
             <p class="main__footer-text">RU/ONCO/2005/0154</p>
           </div>
         </div>
       </div>
     </footer>
+
+    <script src="js/main.js"></script>
 
 	</body>
 </html>
