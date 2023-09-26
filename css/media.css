@@ -3,29 +3,6 @@
     display: block;
   }
 }
-@media (min-width: 320px) and (max-width: 768px) {
-  .info__contact-content-title span:last-child {
-    display: block;
-    font-size: 20px;
-    letter-spacing: -0.18px;
-  }
-}
-@media (min-width: 768px) {
-  .main__footer-text.desktop {
-    display: block;
-  }
-  .main__footer-text.mobile {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .main__footer-text.mobile {
-    display: block;
-  }
-  .main__footer-text.desktop {
-    display: none;
-  }
-}
 @media (max-width: 1920px) {
   .info {
     margin-top: -110px;
@@ -49,8 +26,9 @@
     margin-top: 43px;
   }
   .intro-illustration {
-    top: 365px;
-    right: 5px;
+    top: 390px;
+    right: 0;
+    left: 0;
     max-width: 800px;
   }
   .main-bg {
@@ -213,11 +191,12 @@
   }
   .intro-illustration {
     max-width: 615px;
-    top: 308px;
-    right: -104px;
+    top: 340px;
+    right: calc(-190px + 90 * (100vw - 320px) / 448);
+    left: inherit;
   }
   .main-bg {
-    margin-top: 262px;
+    margin-top: 280px;
   }
   .info {
     margin-top: 64px;
@@ -269,6 +248,9 @@
     font-weight: 700;
     line-height: 30px;
     letter-spacing: -0.6px;
+  }
+  .articles__content-title span:first-child {
+    display: block;
   }
   .articles__content-subtitle {
     margin-top: 22px;
@@ -333,7 +315,7 @@
   .footer__text {
     font-size: 14px;
     line-height: 130%;
-    margin: 102px 0 75px;
+    margin: calc(42px + 60 * (100vw - 320px) / 448) 0 calc(28px + 47 * (100vw - 320px) / 448);
   }
   .footer__text span {
     display: block;
@@ -366,6 +348,11 @@
   .main__footer-block .main__footer-text:last-child {
     margin-right: 0;
     margin-top: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .articles__content-items-item .btn {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
@@ -401,11 +388,11 @@
   }
   .intro-illustration {
     max-width: 458px;
-    top: 290px;
+    top: 310px;
     right: -95px;
   }
   .main-bg {
-    margin-top: 280px;
+    margin-top: 300px;
   }
   .info {
     margin-top: 18px;
@@ -430,10 +417,6 @@
   .info__contact .btn img {
     width: 29px;
   }
-  .info__contact-content-title {
-    font-size: 19px;
-    line-height: 135%;
-  }
   .info__contact-content-text {
     margin: 17px 0 0 0;
   }
@@ -449,7 +432,6 @@
   }
   .articles__content-items-item .btn {
     font-weight: 600;
-    width: 100%;
   }
   .articles__content-items .articles__content-items-item:not(last-child) {
     margin-bottom: 30px;
