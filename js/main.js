@@ -19,6 +19,16 @@ if (document.documentElement.clientWidth > 768) {
     this.classList.add('active')
     popupTitle.innerHTML = 'Лечение пациентов <nobr>с раком</nobr> мочевого пузыря'
     popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/aqGwO4o1sks?si=ctc45fMah1QSuPg7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+    const video = document.querySelector('.popup iframe')
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if (video.mozRequestFullScreen) {
+      video.mozRequestFullScreen();
+    } else if (video.webkitRequestFullscreen) {
+      video.webkitRequestFullscreen();
+    } else if (video.msRequestFullscreen) {
+      video.msRequestFullscreen();
+    }
   })
 
   videoItem[1].addEventListener('click', function () {
