@@ -18,8 +18,6 @@ videoItem[0].addEventListener('click', function () {
   this.classList.add('active')
   popupTitle.innerHTML = 'Жизнь пациента <nobr>с раком</nobr> мочевого пузыря после противоопухолевого лечения или во время него'
   popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/DHQtHpOyHuo?si=mnrria_W8EwlMeKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
-  const video = document.querySelector('.popup iframe')
-  video.requestFullscreen()
 })
 
 videoItem[1].addEventListener('click', function () {
