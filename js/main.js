@@ -4,7 +4,7 @@ const videoItem = document.querySelectorAll('.video__content-item-video'),
       close = document.querySelector('.popup-close'),
       mask = document.querySelector('.mask')
 
-if (document.documentElement.clientWidth > 768) {
+
   videoItem.forEach(el => {
     el.addEventListener('click', function () {
       mask.classList.remove('hidden')
@@ -59,20 +59,20 @@ if (document.documentElement.clientWidth > 768) {
     const video = document.querySelector('.popup iframe')
     video.remove()
   })
-}
 
-if (document.documentElement.clientWidth < 768) {
-  videoItem[0].addEventListener('click', function () {
-    videoItem[0].insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/aqGwO4o1sks?si=ctc45fMah1QSuPg7?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
-    const video = document.querySelector('.video__content-item-video iframe')
-    if (video.requestFullscreen) {
-      video.requestFullscreen();
-    } else if (video.mozRequestFullScreen) {
-      video.mozRequestFullScreen();
-    } else if (video.webkitRequestFullscreen) {
-      video.webkitRequestFullscreen();
-    } else if (video.msRequestFullscreen) {
-      video.msRequestFullscreen();
-    }
-  })
-}
+
+// if (document.documentElement.clientWidth < 768) {
+//   videoItem[0].addEventListener('click', function () {
+//     videoItem[0].insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/aqGwO4o1sks?si=ctc45fMah1QSuPg7?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+//     const video = document.querySelector('.video__content-item-video iframe')
+//     if (video.requestFullscreen) {
+//       video.requestFullscreen();
+//     } else if (video.mozRequestFullScreen) {
+//       video.mozRequestFullScreen();
+//     } else if (video.webkitRequestFullscreen) {
+//       video.webkitRequestFullscreen();
+//     } else if (video.msRequestFullscreen) {
+//       video.msRequestFullscreen();
+//     }
+//   })
+// }
