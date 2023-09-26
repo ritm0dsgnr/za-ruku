@@ -16,8 +16,8 @@ videoItem[0].addEventListener('click', function () {
     return
   }
   this.classList.add('active')
-  popupTitle.innerHTML = 'Жизнь пациента <nobr>с раком</nobr> мочевого пузыря после противоопухолевого лечения или во время него'
-  popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/DHQtHpOyHuo?si=mnrria_W8EwlMeKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+  popupTitle.innerHTML = 'Лечение пациентов <nobr>с раком</nobr> мочевого пузыря'
+  popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/aqGwO4o1sks?si=ctc45fMah1QSuPg7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 })
 
 videoItem[1].addEventListener('click', function () {
@@ -25,7 +25,7 @@ videoItem[1].addEventListener('click', function () {
     return
   }
   this.classList.add('active')
-  popupTitle.innerHTML = 'Жизнь пациента с раком мочевого пузыря после противоопухолевого лечения или во время него'
+  popupTitle.innerHTML = 'Жизнь пациента <nobr>с раком</nobr> мочевого пузыря после противоопухолевого лечения или во время него'
   popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/4wkZtHJnzrg?si=lz45BLmjS_7EOOGK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 })
 
@@ -34,8 +34,8 @@ videoItem[2].addEventListener('click', function () {
     return
   }
   this.classList.add('active')
-  popupTitle.innerHTML = 'Лечение пациентов с раком мочевого пузыря'
-  popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/aqGwO4o1sks?si=ctc45fMah1QSuPg7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
+  popupTitle.innerHTML = 'Диспансерное наблюдение пациентов <nobr>с раком</nobr> мочевого пузыря после лечения'
+  popup.insertAdjacentHTML('beforeEnd', '<iframe src="https://www.youtube.com/embed/DHQtHpOyHuo?si=mnrria_W8EwlMeKS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>')
 })
 
 close.addEventListener('click', function () {

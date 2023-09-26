@@ -449,6 +449,9 @@ body {
   line-height: 120%;
   margin: 0 140px 9px 106px;
 }
+.pre__footer-text a {
+  color: #0050A0;
+}
 .pre__footer-subtext {
   text-transform: uppercase;
   margin-top: 30px;
